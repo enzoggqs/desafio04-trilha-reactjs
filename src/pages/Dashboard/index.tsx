@@ -16,7 +16,7 @@ export interface IFood {
   image: string,
 }
 
-const Dashboard = (props: any): JSX.Element => {
+const Dashboard = (): JSX.Element => {
   const [foods, setFoods] = useState<IFood[]>([]);
   const [editingFood, setEditingFood] = useState<IFood>();
   const [modalOpen, setModalOpen] = useState<boolean>(false);
